@@ -3,55 +3,65 @@
     <div gridCell class="card card-body">
       <div class="card-title">
         <div class="card-title-text">Part Overview</div>
-        <div class="card-icons">
-          <div class="moreinfo-icon" (click)="PartOverviewtoggleMoreInfo()">
-            <span></span>
-          </div>
-
-          <div class="moreinfo-block" #partoverview>
-            <div class="moreinfo-header">
-              <div class="title"><span>More Information</span></div>
-              <a class="close-more" (click)="PartOverviewtoggleMoreInfo()">+</a>
-            </div>
-            <div class="data">
-              <ul>
-                <li>Data Point 1: <span>236</span></li>
-                <li>Data Point 2: <span>11</span></li>
-                <li>Data Point 3: <span>4,322</span></li>
-              </ul>
-            </div>
-            <button class="blue"><span>+</span> Add to My Dashboards</button>
-          </div>
+        <div class="card-icons" #outboundpartoverview>
+          <div
+            class="moreinfo-icon"
+            (click)="OutboundPartOverviewtoggleMoreInfo()"
+          ></div>
         </div>
       </div>
       <div class="card-items charting">
         <app-donut-chart-alt></app-donut-chart-alt>
+      </div>
+      <div class="moreinfo-block" #ioutboundpartoverview>
+        <div class="moreinfo-header">
+          The content is related to the Master set of filters on the top.<br /><br />
+          AFTER YOU SEARCH INSIDE THE GRID (drill down inside the grid), the
+          visual on the top will not follow along. ONCE you manipulate again the
+          Master Top Filters, this grid will reset and start over. "Saved
+          Preferences" is a feature coming soon. In the meantime, your
+          adjustments will stay during your browing sesson (reseted once you
+          refresh the browser, the website or log-out). <br /><br />
+          The content is related to the Master set of filters on the top.<br /><br />
+          AFTER YOU SEARCH INSIDE THE GRID (drill down inside the grid), the
+          visual on the top will not follow along. ONCE you manipulate again the
+          Master Top Filters, this grid will reset and start over. "Saved
+          Preferences" is a feature coming soon. In the meantime, your
+          adjustments will stay during your browing sesson (reseted once you
+          refresh the browser, the website or log-out).
+        </div>
       </div>
     </div>
     <div gridCell class="card card-body">
       <div class="card-title">
         <div class="card-title-text">Outbound Overview</div>
-        <div class="card-icons">
-          <div class="moreinfo-icon" (click)="FsitetoggleMoreInfo()"></div>
-
-          <div class="moreinfo-block" #fsiteoverview>
-            <div class="moreinfo-header">
-              <div class="title"><span>More Information</span></div>
-              <a class="close-more" (click)="FsitetoggleMoreInfo()">+</a>
-            </div>
-            <div class="data">
-              <ul>
-                <li>Data Point 1: <span>36</span></li>
-                <li>Data Point 2: <span>1</span></li>
-                <li>Data 3: <span>322</span></li>
-              </ul>
-            </div>
-            <button class="blue"><span>+</span> Add to My Dashboards</button>
-          </div>
+        <div class="card-icons" #outboundoverview>
+          <div
+            class="moreinfo-icon"
+            (click)="OutboundOverviewtoggleMoreInfo()"
+          ></div>
         </div>
       </div>
       <div class="card-items charting">
         <app-donut-chart-alt></app-donut-chart-alt>
+      </div>
+      <div class="moreinfo-block" #ioutboundoverview>
+        <div class="moreinfo-header">
+          The content is related to the Master set of filters on the top.<br /><br />
+          AFTER YOU SEARCH INSIDE THE GRID (drill down inside the grid), the
+          visual on the top will not follow along. ONCE you manipulate again the
+          Master Top Filters, this grid will reset and start over. "Saved
+          Preferences" is a feature coming soon. In the meantime, your
+          adjustments will stay during your browing sesson (reseted once you
+          refresh the browser, the website or log-out). <br /><br />
+          The content is related to the Master set of filters on the top.<br /><br />
+          AFTER YOU SEARCH INSIDE THE GRID (drill down inside the grid), the
+          visual on the top will not follow along. ONCE you manipulate again the
+          Master Top Filters, this grid will reset and start over. "Saved
+          Preferences" is a feature coming soon. In the meantime, your
+          adjustments will stay during your browing sesson (reseted once you
+          refresh the browser, the website or log-out).
+        </div>
       </div>
     </div>
     <div gridCell class="card card-body">
@@ -96,27 +106,26 @@
             </div>
           </div>
         </div>
-        <div class="card-icons">
+        <div class="card-icons" #foutboundlocationsoverview>
           <a
             class="maximize-icon"
-            [routerLink]="['/demandReportsLocations']"
+            [routerLink]="['/outboundReportsLocations']"
           ></a>
-          <div class="moreinfo-icon" (click)="FLocationsMoreInfo()"></div>
-
-          <div class="moreinfo-block" #flocationsoverview>
-            <div class="moreinfo-header">
-              <div class="title"><span>More Information</span></div>
-              <a class="close-more" (click)="FLocationsMoreInfo()">+</a>
-            </div>
-            <div class="data">
-              <ul>
-                <li>Data Point 1: <span>316</span></li>
-                <li>Data Point 2: <span>10</span></li>
-                <li>Data 3: <span>32</span></li>
-              </ul>
-            </div>
-            <button class="blue"><span>+</span> Add to My Dashboards</button>
-          </div>
+          <div
+            class="moreinfo-icon"
+            (click)="FOutboundLocationsMoreInfo()"
+          ></div>
+        </div>
+      </div>
+      <div class="moreinfo-block" #ifoutboundlocationsoverview>
+        <div class="moreinfo-header">
+          The content is related to the Master set of filters on the top.<br /><br />
+          AFTER YOU SEARCH INSIDE THE GRID (drill down inside the grid), the
+          visual on the top will not follow along. ONCE you manipulate again the
+          Master Top Filters, this grid will reset and start over. "Saved
+          Preferences" is a feature coming soon. In the meantime, your
+          adjustments will stay during your browing sesson (reseted once you
+          refresh the browser, the website or log-out).
         </div>
       </div>
       <img
