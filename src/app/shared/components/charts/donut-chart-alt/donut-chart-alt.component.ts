@@ -62,12 +62,9 @@ export class DonutComponentAlt implements OnInit {
         ],
       },
       {
-        // holeSize: 45,
-        // margin: 2,
         size: 20,
         name: 'parts',
         type: 'donut',
-        //autoFit: 'autofit',
         border: {
           width: 1,
           color: 'black',
