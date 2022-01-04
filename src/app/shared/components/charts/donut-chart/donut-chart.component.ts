@@ -32,6 +32,7 @@ export class DonutComponent implements OnInit {
       {
         holeSize: 65,
         margin: 0,
+        size: 30,
         name: 'parts',
         type: 'donut',
         border: {

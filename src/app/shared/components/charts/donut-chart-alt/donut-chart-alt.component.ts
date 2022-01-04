@@ -17,11 +17,11 @@ export class DonutComponentAlt implements OnInit {
   public chartConfig = {
     chartArea: {
       background: 'transparent',
-      height: 240,
+      height: 280,
       top: 0,
       padding: 0,
       margin: 0,
-      width: 420,
+      width: 400,
       autoFit: false,
     },
     legend: {
@@ -37,7 +37,7 @@ export class DonutComponentAlt implements OnInit {
       {
         holeSize: 45,
         margin: 4,
-        size: 14,
+        size: 20,
         name: 'parts2',
         //autoFit: 'autofit',
         type: 'donut',
@@ -64,7 +64,7 @@ export class DonutComponentAlt implements OnInit {
       {
         // holeSize: 45,
         // margin: 2,
-        size: 14,
+        size: 20,
         name: 'parts',
         type: 'donut',
         //autoFit: 'autofit',
