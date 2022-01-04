@@ -17,11 +17,11 @@ export class DonutComponentAlt implements OnInit {
   public chartConfig = {
     chartArea: {
       background: 'transparent',
-      height: 230,
+      height: 240,
       top: 0,
       padding: 0,
       margin: 0,
-      width: 400,
+      width: 420,
       autoFit: false,
     },
     legend: {
