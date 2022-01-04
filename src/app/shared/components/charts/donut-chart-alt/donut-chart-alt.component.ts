@@ -46,13 +46,13 @@ export class DonutComponentAlt implements OnInit {
           color: 'black',
           dashType: 'solid',
         },
-        explodeField: 'explode',
 
         data: [
           {
             category: 'Parts Sent On Time',
             value: 65,
             color: '#009a8c',
+            explode: true,
           },
           {
             category: 'Parts Sent Past Due',
@@ -70,7 +70,6 @@ export class DonutComponentAlt implements OnInit {
           color: 'black',
           dashType: 'solid',
         },
-        explodeField: 'explode',
 
         data: [
           {
@@ -84,4 +83,5 @@ export class DonutComponentAlt implements OnInit {
   };
   ngOnInit(): void {}
   @ViewChild('donutoverviewalt') donutoverviewalt: ElementRef;
+
 }
