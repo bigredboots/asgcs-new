@@ -350,11 +350,14 @@
     overflow-y: auto;
     border-radius: 10px 0px 0px 10px;
   }
-  .menu-list ul ul {
+  .menu-list li ul {
     max-height: 0px;
     overflow-y: hidden;
+    transition: $default-transition;
   }
-
+  .menu-list .drop-active ul {
+    max-height: 300px;
+  }
   .menu-list ul li {
     list-style: none;
     font-size: 14px;
@@ -455,6 +458,17 @@
   .lines {
     padding: 20px 0px;
   }
+}
+input.search-reports {
+  margin-left: 16px;
+  border: 0px;
+  background: #fff;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-size: 14px;
 }
 
 :host ::ng-deep .filter-container {

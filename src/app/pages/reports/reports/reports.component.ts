@@ -6,10 +6,26 @@ import { Component, Input, OnInit, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./reports.component.scss'],
 })
 export class ReportsComponent {
-  @ViewChild('flocationsoverview') flocationsoverview: ElementRef;
+  @ViewChild('fdemandoverview') fdemandoverview: ElementRef;
+  @ViewChild('foutboundoverview') foutboundoverview: ElementRef;
+  @ViewChild('fhubsoverview') fhubsoverview: ElementRef;
+  @ViewChild('fsupplyoverview') fsupplyoverview: ElementRef;
+  @ViewChild('finboundoverview') finboundoverview: ElementRef;
 
-  FLocationsMoreInfo() {
-    this.flocationsoverview.nativeElement.classList.toggle('drop-active');
+  FDemandMoreInfo() {
+    this.fdemandoverview.nativeElement.classList.toggle('drop-active');
+  }
+  FOutboundMoreInfo() {
+    this.foutboundoverview.nativeElement.classList.toggle('drop-active');
+  }
+  FHubsMoreInfo() {
+    this.fhubsoverview.nativeElement.classList.toggle('drop-active');
+  }
+  FSupplyMoreInfo() {
+    this.fsupplyoverview.nativeElement.classList.toggle('drop-active');
+  }
+  FInboundMoreInfo() {
+    this.finboundoverview.nativeElement.classList.toggle('drop-active');
   }
   ngOnInit(): void {}
 }

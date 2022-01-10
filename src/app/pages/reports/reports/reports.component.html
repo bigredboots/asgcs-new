@@ -4,12 +4,16 @@
       <div class="card-title left">
         <div class="custom-reports card-title-text">Report List</div>
         <div class="my-reports card-title-text">My Reports</div>
+        <div class="search-field">
+          <input type="text" class="search-reports" placeholder="Search" />
+          <button class="submit">Submit</button>
+        </div>
       </div>
       <div class="menu-list">
         <ul>
-          <li>
-            <div (click)="FLocationsMoreInfo()">Demand</div>
-            <ul #flocationsoverview>
+          <li (click)="FDemandMoreInfo()" #fdemandoverview>
+            <div class="title-row">Demand</div>
+            <ul>
               <li>
                 <a>Demand Full Report</a>
               </li>
@@ -43,8 +47,8 @@
               </li>
             </ul>
           </li>
-          <li>
-            Outbound
+          <li (click)="FOutboundMoreInfo()" #foutboundoverview>
+            <div class="title-row">Outbound</div>
             <ul>
               <li>
                 <a>OUTBOUND FULL REPORT</a>
@@ -79,8 +83,8 @@
               </li>
             </ul>
           </li>
-          <li>
-            Hubs
+          <li (click)="FHubsMoreInfo()" #fhubsoverview>
+            <div class="title-row">Hubs</div>
             <ul>
               <li>
                 <a>HUBS FULL REPORT</a>
@@ -115,8 +119,44 @@
               </li>
             </ul>
           </li>
-          <li>
-            Supply
+          <li (click)="FInboundMoreInfo()" #finboundoverview>
+            <div class="title-row">Inbound</div>
+            <ul>
+              <li>
+                <a>Inbound Shipping FULL REPORT</a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsWavechart']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Activity</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsLocations']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsProfile']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsTotaldemand']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Status</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li (click)="FHubsMoreInfo()" #fsupplyoverview>
+            <div class="title-row">Supply</div>
             <ul>
               <li>
                 <a>Supply FULL REPORT</a>
