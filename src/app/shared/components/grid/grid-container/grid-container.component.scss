@@ -346,6 +346,7 @@
       font-weight: 800;
       padding: 15px 10px;
       font-size: 16px;
+      cursor: pointer;
 
       &:after {
         width: 0;
@@ -355,15 +356,13 @@
         border-top: 6px solid #ccc;
         display: inline-block;
         content: '';
-        margin-left: px;
+        margin-left: 10px;
         position: relative;
         top: -3px;
-        transform: rotate(
-          -90deg
-          );
+        transform: rotate(-90deg);
       }
     }
-    ul {
+    .bucket-row {
       padding: 0px;
       border: 1px solid #333;
       max-height: 225px;
@@ -371,15 +370,16 @@
       overflow-y: auto;
       border-radius: 10px 0px 0px 10px;
     }
-  }
-
-  .menu-list li ul {
-    max-height: 0px;
-    overflow-y: hidden;
-    transition: $default-transition;
-  }
-  .menu-list .drop-active ul {
-    max-height: 300px;
+    .menu-listing {
+      max-height: 0px;
+      overflow-y: hidden;
+      transition: $default-transition;
+      margin: 0px;
+      padding: 0px;
+    }
+    .drop-active .menu-listing {
+      max-height: 300px;
+    }
   }
   .menu-list ul li {
     list-style: none;
@@ -393,9 +393,8 @@
     font-weight: 600;
   }
   .menu-list ul li a {
-    width: 100%;
     display: block;
-    padding: 5px;
+    padding: 7px 0px 7px 20px;
   }
   .menu-list ul li.active {
     background-color: $blue-color;
