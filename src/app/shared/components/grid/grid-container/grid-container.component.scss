@@ -350,6 +350,10 @@
     overflow-y: auto;
     border-radius: 10px 0px 0px 10px;
   }
+  .menu-list ul ul {
+    max-height: 0px;
+    overflow-y: hidden;
+  }
 
   .menu-list ul li {
     list-style: none;
@@ -408,7 +412,7 @@
     background: #151515;
     margin-top: 10px;
     border-radius: 10px;
-    height: 280px
+    height: 280px;
   }
 }
 :host ::ng-deep .card-element {

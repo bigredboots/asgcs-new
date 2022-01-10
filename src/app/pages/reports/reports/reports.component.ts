@@ -1,19 +1,15 @@
 import { Component, Input, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'hubs',
+  selector: 'reports',
   templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.scss']
+  styleUrls: ['./reports.component.scss'],
 })
-export class HubsComponent {
+export class ReportsComponent {
   @ViewChild('flocationsoverview') flocationsoverview: ElementRef;
-  @ViewChild('treemapmoreinfo') treemapmoreinfo: ElementRef;
 
   FLocationsMoreInfo() {
-    this.flocationsoverview.nativeElement.classList.toggle('moreinfo-active');
-  }
-  TreeMapMoreInfo() {
-    this.treemapmoreinfo.nativeElement.classList.toggle('moreinfo-active');
+    this.flocationsoverview.nativeElement.classList.toggle('drop-active');
   }
   ngOnInit(): void {}
 }

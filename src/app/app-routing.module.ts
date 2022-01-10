@@ -20,6 +20,7 @@ import { OutboundReportsProfileComponent } from './pages/outbound/outbound-repor
 
 import { HubsComponent } from './pages/hubs/hubs/hubs.component';
 import { SupplyComponent } from './pages/supply/supply/supply.component';
+import { ReportsComponent } from './pages/reports/reports/reports.component';
 import { SettingsComponent } from './pages/settings/settings/settings.component';
 
 const routes: Routes = [
@@ -148,6 +149,11 @@ const routes: Routes = [
     path: 'supply',
     component: SupplyComponent,
     data: { title: '15Main Page', breadcrumb: '' },
+  },
+  {
+    path: 'reports',
+    component: ReportsComponent,
+    data: { title: '16Main Page', breadcrumb: '' },
   },
   {
     path: 'settings',

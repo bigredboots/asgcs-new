@@ -7,36 +7,149 @@
       </div>
       <div class="menu-list">
         <ul>
-          <li class="active">
-            <a>DEMAND FULL REPORT</a>
+          <li>
+            <div (click)="FLocationsMoreInfo()">Demand</div>
+            <ul #flocationsoverview>
+              <li>
+                <a>Demand Full Report</a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/demandReportsWavechart']"
+                  [routerLinkActive]="['is-active']"
+                  >Demand Activity</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/demandReportsLocations']"
+                  [routerLinkActive]="['is-active']"
+                  >Demand Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/demandReportsProfile']"
+                  [routerLinkActive]="['is-active']"
+                  >Demand Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/demandReportsTotalDemand']"
+                  [routerLinkActive]="['is-active']"
+                  >Demand Status</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
-            <a
-              [routerLink]="['/demandReportsWavechart']"
-              [routerLinkActive]="['is-active']"
-              >Demand Activity</a
-            >
+            Outbound
+            <ul>
+              <li>
+                <a>OUTBOUND FULL REPORT</a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsWavechart']"
+                  [routerLinkActive]="['is-active']"
+                  >Outbound Activity</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsLocations']"
+                  [routerLinkActive]="['is-active']"
+                  >Outbound Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsProfile']"
+                  [routerLinkActive]="['is-active']"
+                  >Outbound Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsTotaldemand']"
+                  [routerLinkActive]="['is-active']"
+                  >Outbound Status</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
-            <a
-              [routerLink]="['/demandReportsLocations']"
-              [routerLinkActive]="['is-active']"
-              >Demand Locations</a
-            >
+            Hubs
+            <ul>
+              <li>
+                <a>HUBS FULL REPORT</a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsWavechart']"
+                  [routerLinkActive]="['is-active']"
+                  >Hubs Activity</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsLocations']"
+                  [routerLinkActive]="['is-active']"
+                  >Hubs Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsProfile']"
+                  [routerLinkActive]="['is-active']"
+                  >Hubs Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsTotaldemand']"
+                  [routerLinkActive]="['is-active']"
+                  >Hubs Status</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
-            <a
-              [routerLink]="['/demandReportsProfile']"
-              [routerLinkActive]="['is-active']"
-              >Demand Profile</a
-            >
-          </li>
-          <li>
-            <a
-              [routerLink]="['/demandReportsTotalDemand']"
-              [routerLinkActive]="['is-active']"
-              >Demand Status</a
-            >
+            Supply
+            <ul>
+              <li>
+                <a>Supply FULL REPORT</a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsWavechart']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Activity</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsLocations']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsProfile']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/outboundReportsTotaldemand']"
+                  [routerLinkActive]="['is-active']"
+                  >Supply Status</a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

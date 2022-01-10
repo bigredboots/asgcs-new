@@ -30,7 +30,7 @@ import { OutboundReportsWavechartComponent } from './pages/outbound/outbound-rep
 import { OutboundReportsProfileComponent } from './pages/outbound/outbound-reports-profile/outboundReportsProfile.component';
 
 import { HubsComponent } from './pages/hubs/hubs/hubs.component';
-
+import { ReportsComponent } from './pages/reports/reports/reports.component';
 import { SupplyComponent } from './pages/supply/supply/supply.component';
 
 import { SettingsComponent } from './pages/settings/settings/settings.component';
@@ -43,7 +43,6 @@ import 'hammerjs';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    // DonutComponent,
     ChartsModule,
     HttpClientModule,
     CoreModule,
@@ -54,13 +53,13 @@ import 'hammerjs';
     AppComponent,
     DashboardComponent,
     DemandOverviewComponent,
-    // DonutComponent,
     DemandDiscoverComponent,
     DemandReportsComponent,
     DemandReportsWavechartComponent,
     DemandReportsTotalDemandComponent,
     HubsComponent,
     SupplyComponent,
+    ReportsComponent,
     SettingsComponent,
     DemandReportsLocationsComponent,
     DemandReportsProfileComponent,
@@ -72,9 +71,6 @@ import 'hammerjs';
     OutboundReportsLocationsComponent,
     OutboundReportsProfileComponent,
   ],
-  bootstrap: [
-    AppComponent,
-    // DonutComponent
-  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
