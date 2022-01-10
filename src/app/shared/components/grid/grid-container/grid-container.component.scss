@@ -341,15 +341,38 @@
     right: -8px;
     cursor: pointer;
   }
-  .menu-list ul {
-    margin: 10px 0px;
-    padding: 0px;
-    border: 1px solid #333;
-    max-height: 225px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    border-radius: 10px 0px 0px 10px;
+  .menu-list {
+    .title-row {
+      font-weight: 800;
+      padding: 15px 10px;
+      font-size: 16px;
+
+      &:after {
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #ccc;
+        display: inline-block;
+        content: '';
+        margin-left: px;
+        position: relative;
+        top: -3px;
+        transform: rotate(
+          -90deg
+          );
+      }
+    }
+    ul {
+      padding: 0px;
+      border: 1px solid #333;
+      max-height: 225px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      border-radius: 10px 0px 0px 10px;
+    }
   }
+
   .menu-list li ul {
     max-height: 0px;
     overflow-y: hidden;
@@ -459,16 +482,33 @@
     padding: 20px 0px;
   }
 }
-input.search-reports {
-  margin-left: 16px;
-  border: 0px;
-  background: #fff;
+:host ::ng-deep .search-field {
   display: flex;
-  gap: 5px;
-  align-items: center;
-  border-radius: 5px;
-  padding: 0px 5px;
-  font-size: 14px;
+  position: relative;
+
+  input {
+    margin-left: 16px;
+    border: 0px;
+    background: #fff;
+    gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 22px 0px 5px;
+    font-size: 14px;
+    width: 115px;
+  }
+  button {
+    width: 16px;
+    text-indent: -999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    background-color: transparent;
+    border: none;
+    background-size: 16px 16px;
+    margin-top: 2px;
+  }
 }
 
 :host ::ng-deep .filter-container {
