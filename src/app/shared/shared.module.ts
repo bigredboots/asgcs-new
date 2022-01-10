@@ -14,6 +14,12 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { DonutComponent } from './components/charts/donut-chart/donut-chart.component';
 import { DonutComponentAlt } from './components/charts/donut-chart-alt/donut-chart-alt.component';
 import { ChartsModule } from '@progress/kendo-angular-charts';
+import {
+  GridModule,
+  PDFModule,
+  ExcelModule,
+} from '@progress/kendo-angular-grid';
+import { InputsModule } from '@progress/kendo-angular-inputs';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,15 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
     SidebarComponent,
     BreadcrumbComponent,
   ],
-  imports: [CommonModule, RouterModule, ChartsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ChartsModule,
+    GridModule,
+    PDFModule,
+    ExcelModule,
+    InputsModule,
+  ],
   exports: [
     DonutComponent,
     DonutComponentAlt,

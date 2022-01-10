@@ -37,6 +37,8 @@ import { SettingsComponent } from './pages/settings/settings/settings.component'
 //import { DonutComponent } from './shared/components/charts/donut-chart/donut-chart.component';
 import 'hammerjs';
 
+
+
 @NgModule({
   imports: [
     AppRoutingModule,
