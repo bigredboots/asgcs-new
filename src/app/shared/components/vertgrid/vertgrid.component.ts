@@ -21,7 +21,7 @@ import { TooltipDirective } from '@progress/kendo-angular-tooltip';
 
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent implements OnInit {
+export class VertgridComponent implements OnInit {
   constructor(@Inject(DOCUMENT) private document: any) {}
   elem;
 
