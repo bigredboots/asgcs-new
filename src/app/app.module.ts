@@ -34,7 +34,6 @@ import { ReportsComponent } from './pages/reports/reports/reports.component';
 import { SupplyComponent } from './pages/supply/supply/supply.component';
 
 import { SettingsComponent } from './pages/settings/settings/settings.component';
-//import { DonutComponent } from './shared/components/charts/donut-chart/donut-chart.component';
 import 'hammerjs';
 
 
